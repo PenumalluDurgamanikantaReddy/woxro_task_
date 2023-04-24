@@ -61,7 +61,7 @@ function Navbar() {
         data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false"
         data-bs-placement="end" aria-label="Toggle navigation">        <span class="navbar-toggler-icon"></span>
   </button>*/}
-      <button class="navbar-toggler" style={{left:"70%",position:"relative"}}  type="button" data-bs-toggle="offcanvas" ata-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      <button class="navbar-toggler" style={{left:"80%",position:"relative"}}  type="button" data-bs-toggle="offcanvas" ata-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
