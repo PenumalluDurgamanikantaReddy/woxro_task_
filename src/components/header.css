@@ -1,0 +1,21 @@
+
+.container-fluid {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  
+  .contactbutton{
+  
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .contactbutton:hover {
+    color: #000;
+    background-color: #fff;
+  }
