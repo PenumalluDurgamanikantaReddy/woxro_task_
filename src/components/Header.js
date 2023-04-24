@@ -36,6 +36,7 @@ function Header() {
       fontWeight:"bold",
       paddingTop:"30%"
     },
+    
   }))
   const Size=styled(("div"))(({theme})=>({
     paddingTop:"4rem",
@@ -50,12 +51,49 @@ function Header() {
     }
   }))
 
+const Headerbg=styled(("div"))(({theme})=>({
+   width:"100%",
+  [theme.breakpoints.down('sm')] : {
+    height:"140%",
+  },
+  [theme.breakpoints.down("xl")] : {
+    height:"140%",
+
+  }
+}))
+
+
+const Bgimg = styled('img')(({theme})=>({
+// object-fit: contain;
+// overflow: clip;
+// width: 100%;
+paddingTop:"8.5%",
+objectFit:"contain",
+overflow:"clip",
+width:"100%",
+ [theme.breakpoints.down('sm')] : {
+   minheight:"140%",
+   paddingTop:"20%",
+   objectFit:"cover",
+ },
+ [theme.breakpoints.down("xl")] : {
+   minheight:"140%",
+   paddingTop:"20%",
+   objectFit:"cover",
+ }
+}))
+
+
+// object-fit: contain;
+// overflow: clip;
+// width: 100%;
 
 
 
   return (
     <div className="container-fluid p-0" style={{position: "relative"}} id="aboutus">
- <img src={bgg} className="img-fluid" alt="..." style={{paddingTop:"5%",maxWidth:"100%"}} />
+
+   <Bgimg src={bgg}   />
       <div className="container" style={{position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", color:"white",
     display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center"}}>
      
