@@ -8,17 +8,23 @@ function Header() {
   const Typography=styled(("div"))(({theme})=>({
     fontSize:"5rem",
     fontWeight:"bold",
-
-    [theme.breakpoints.down('sm')] : {
-      fontSize:"1rem",
-      fontWeight:"bold",
-    },
     [theme.breakpoints.down("md")] : {
       fontSize:"1rem",
       fontWeight:"bold",
         margin:"0",
     },
-
+    [theme.breakpoints.down("xl")] : {
+      fontSize:"3rem",
+      
+      fontWeight:"bold",
+  
+    },
+    [theme.breakpoints.down('sm')] : {
+      fontSize:"1rem",
+      fontWeight:"bold",
+    },
+  
+  
   }))
   const Typographyy=styled(("div"))(({theme})=>({
     fontSize:"5rem",
@@ -26,15 +32,21 @@ function Header() {
     marginTop:"10%",
 
     [theme.breakpoints.down("md")] : {
-      fontSize:"2rem",
+      fontSize:"1rem",
       fontWeight:"bold",
       marginTop:"5%",
       margiBottom:"0%"
     },
     [theme.breakpoints.down("xl")] : {
-      fontSize:"1rem",
+      fontSize:"3rem",
+      
       fontWeight:"bold",
       paddingTop:"30%"
+    },
+    
+    [theme.breakpoints.down('sm')] : {
+      fontSize:"1rem",
+      fontWeight:"bold",
     },
     
   }))
