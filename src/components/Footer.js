@@ -11,6 +11,7 @@ import { Input } from '@mui/joy';
 import Button from '@mui/joy/Button';
 import CallIcon from '@mui/icons-material/Call';
 import MessageIcon from '@mui/icons-material/Message';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 function Footer() {
   const Typography=styled(("div"))(({theme})=>({
     fontSize:"3rem",
@@ -80,12 +81,28 @@ function Footer() {
 }
   }))
 
+  const style = {
+    color: "white",
+    backgroundColor: "black",
+    "&:hover": {
+      color: "black",
+      backgroundColor: "white"
+    }
+  };
+  const StyledButton = styled(Button)({
+    color: "white",
+    backgroundColor: "black",
+    "&:hover": {
+      color: "black",
+      backgroundColor: "white"
+    }
+  });
 
 
 
   return (
     <div className="container-fluid p-0" style={{position: "relative",backgroundColor:"black"}} id='ContactUs'>
-    <img src={world} className="img-fluid" alt="..." style={{paddingTop:"4px",maxWidth:"100%", width: "100%",height:"100%",}} />
+    <img src={world}  alt="..." style={{paddingTop:"4px",maxWidth:"100%", width: "100%",height:"100%",}} />
       <div className="container" style={{position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", color:"white",
     display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center"}}>
      
@@ -95,9 +112,9 @@ function Footer() {
         <Typography style={{fontFamily:"Montserrat",}}>  We offer all kinds of IT services that ensure your success</Typography>
         <Buttons>
 
-        <Button variant="outlined"  className='contactbutton'>    <CallIcon/><strong>ContactUs</strong></Button>
+        <StyledButton variant="outlined" startIcon={<CallOutlinedIcon/>}><CallOutlinedIcon/>ContactUs</StyledButton>
+        <StyledButton variant="outlined" startIcon={<MessageIcon/> }>   <MessageIcon/>  Lets'Talk</StyledButton>
         
-        <Button variant="outlined"  className='contactbutton'>    <MessageIcon/>  Lets'Talk</Button>
      
   
       </Buttons>
